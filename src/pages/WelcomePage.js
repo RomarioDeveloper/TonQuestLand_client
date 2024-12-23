@@ -12,17 +12,17 @@ const WelcomePage = () => {
   };
 
   return (
-    <div className="welcome-page">
-      <div className="container">
-        <h1>Welcome to TonQuest!</h1>
-        <div className="gif-wrapper">
-          <img src="/sunglasses.gif" alt="Sunglasses GIF" />
+    <div class="welcome-page">
+        <div class="container">
+          <h1>Welcome to TonQuest!</h1>
+          <div class="gif-wrapper">
+            <img src="sunglasses.png" alt="Sunglasses GIF" />
+          </div>
+          <p>Start completing <br> quests and <br> earning prizes!</p>
+          <button class="btn" onClick={handleOpenApp}>
+            Open the app!
+          </button>
         </div>
-        <p>Start completing quests and earning prizes!</p>
-        <button className="btn" onClick={handleOpenApp}>
-          Open the app!
-        </button>
-      </div>
     </div>
   );
 };
