@@ -1,9 +1,9 @@
 /* Подключение шрифта Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", serif;
   background-color: #1a1a1a; /* Темный фон */
   display: flex;
   justify-content: center;
@@ -17,55 +17,67 @@ body {
   align-items: center;
   height: 100%;
   padding: 0 16px;
+  flex-direction: column;
 }
 
 .container {
   text-align: center;
   background-color: white;
   padding: 24px;
-  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  width: 320px;
-  border: 2px solid #0078ff; /* Синий акцент */
+  width: 393px;
+  height: 852px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > *:not(.btn) {
+  margin-top: 50px; /* Смещаем все элементы внутри контейнера на 50px, кроме кнопки */
 }
 
 h1 {
-  font-size: 22px;
-  margin: 0;
-  margin-bottom: 16px;
-  color: black;
+  font-size: 48px;
   font-weight: 700;
+  margin: 0;
+  color: black;
 }
 
-.gif-wrapper {
-  margin-bottom: 16px;
-}
+/* .gif-wrapper {
+} */
 
 .gif-wrapper img {
-  width: 100px;
-  height: 100px;
+  width: 228px;
+  height: 228px;
   object-fit: cover;
 }
 
 p {
-  font-size: 14px;
+  font-size: 32px;
+  font-weight: 700;
   color: black;
-  margin-bottom: 24px;
-  font-weight: 400;
+  white-space: nowrap;
 }
 
 .btn {
-  background-color: #0078ff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #005bb5;
-}
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    width: 249px;
+    height: 52px;
+    align-self: center;
+    position: relative;
+    top: -30px;
+  }
+  
+  .btn:hover {
+    background-color: #005bb5;
+  }
+  
