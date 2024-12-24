@@ -1,13 +1,83 @@
+/* Подключение шрифта Inter */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", serif;
+  background-color: #1a1a1a; /* Темный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.welcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  flex-direction: column;
 }
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 393px;
+  height: 852px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > *:not(.btn) {
+  margin-top: 50px; /* Смещаем все элементы внутри контейнера на 50px, кроме кнопки */
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+}
+
+/* .gif-wrapper {
+} */
+
+.gif-wrapper img {
+  width: 228px;
+  height: 228px;
+  object-fit: cover;
+}
+
+p {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  white-space: nowrap;
+}
+
+.btn {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    width: 249px;
+    height: 52px;
+    align-self: center;
+    position: relative;
+    top: -30px;
+  }
+  
+  .btn:hover {
+    background-color: #005bb5;
+  }
+  

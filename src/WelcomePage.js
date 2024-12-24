@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './WelcomePage.css';
+import './index.css';
 
 const WelcomePage = () => {
   useEffect(() => {
@@ -12,17 +12,19 @@ const WelcomePage = () => {
   };
 
   return (
-    <div class="welcome-page">
-        <div class="container">
-          <h1>Welcome to TonQuest!</h1>
-          <div class="gif-wrapper">
-            <img src="sunglasses.png" alt="Sunglasses GIF" />
-          </div>
-          <p>Start completing <br> quests and <br> earning prizes!</p>
-          <button class="btn" onClick={handleOpenApp}>
-            Open the app!
-          </button>
+    <div className="welcome-page">
+      <div className="container">
+        <h1>Welcome to TonQuest!</h1>
+        <div className="gif-wrapper">
+          <img src="./1.png" alt="Sunglasses GIF" />
         </div>
+        <p>
+          Start completing <br /> quests and <br /> earning prizes!
+        </p>
+        <button className="btn" onClick={handleOpenApp}>
+          Open the app!
+        </button>
+      </div>
     </div>
   );
 };
